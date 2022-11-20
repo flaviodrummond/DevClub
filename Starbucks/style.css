@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.texto {
+    width: 800px;
+}
+
+.conteudo {
+    width: 100%;
+    display: flex; /* Permite que alteremos a posição dos elementos na tela */
+    justify-content: space-between; /* Permite justificar / Alinhar os componentes na horizontal */
+    align-items: center; /* Permite justificar / Alinhar os componetes na vertical */
+}
+
+.imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 350px;
+}
+
+.starbucks {
+    width: 340px;
+}
+
+h2 {
+    color: #1C1C1C;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+span {
+    color: #017143;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 15px; /* Tamanho da fonte */
+}
+
+button {
+    background-color: #017143; /* background -> fundo do elemento */
+    color: white; /* Cor do texto */
+    border-radius: 30px; /* Arredondamento da bora */
+    border: none; /* Borda do elemento */
+    cursor: pointer; /* Cursor do mouse */
+    padding: 7px; /* Espaçamento interno */
+    margin-top: 10px;
+}
+.menu {
+    width: 60px; /* Largura */
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu:hover {
+    transform: translateY(-25px);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
